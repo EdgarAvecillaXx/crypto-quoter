@@ -1,10 +1,14 @@
+//* modules
 import React from 'react';
 import {Text, StyleSheet, Platform} from 'react-native';
 
+//* Component
+//* Header title
 const Header = () => {
   return <Text style={styles.header}>crypto quoter</Text>;
 };
 
+//* style code
 const styles = StyleSheet.create({
   //* condicionamos estilos dependiendo de el OS del dispositivo
   header: {

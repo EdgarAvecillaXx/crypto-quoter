@@ -1,7 +1,11 @@
+//* modules
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
+//* Component
 const Quotation = ({quotation}) => {
+  //* this render is conditioned with && operator,
+  //* it will only be shown if the user requests a quotation with the quote button of the form.
   return (
     Object.keys(quotation).length !== 0 && (
       <View style={styles.quotation}>
